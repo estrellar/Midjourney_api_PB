@@ -29,7 +29,7 @@ class Receiver:
         with open(self.params, "r") as json_file:
             params = json.load(json_file)
 
-        self.channelid=params['channelid']
+        self.channelid=params['channel_id']
         self.authorization=params['authorization']
         self.headers = {'authorization' : self.authorization}
 
